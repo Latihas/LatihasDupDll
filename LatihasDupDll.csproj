@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
     <OutputPath>bin</OutputPath>
-    <Version>7.50.2.1</Version>
+    <Version>7.50.2.2</Version>
     <RepoUrl>https://github.com/Latihas/LatihasDupDll</RepoUrl>
     <Author>Latihas</Author>
     <Name>LatihasDupDll</Name>
@@ -12,7 +12,4 @@
     <DalamudLibPath>$(appdata)\XIVLauncherCN\addon\Hooks\dev</DalamudLibPath>
     <AssemblySearchPaths>$(AssemblySearchPaths);$(DalamudLibPath)</AssemblySearchPaths>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include=".github\workflows\pr-build.yml" />
-  </ItemGroup>
 </Project>

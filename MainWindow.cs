@@ -79,7 +79,7 @@ public class MainWindow() : Window("LatihasDupDll") {
 		ImGui.Text($"请注意，同步最新版本后需要重新加载插件才会生效");
 		try {
 			foreach (var (dllName, value) in dllStatistics) {
-				if (ImGui.CollapsingHeader($"{dllName}（版本总数：{value.Sum(i => i.Value.Count)}）")) {
+				if (ImGui.CollapsingHeader($"{dllName}(插件数: {value.Sum(i => i.Value.Count)}) (差异数: {value.Keys.Count})")) {
 					var maxVer = value.Max(item => item.Key)!;
 					foreach (var (ver, valueTuple) in value) {
 						ImGui.Text($"├ 版本 {ver} | 出现次数：{valueTuple.Count}");
