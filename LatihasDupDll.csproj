@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
     <OutputPath>bin</OutputPath>
-    <Version>7.50.2.0</Version>
+    <Version>7.50.2.1</Version>
     <RepoUrl>https://github.com/Latihas/LatihasDupDll</RepoUrl>
     <Author>Latihas</Author>
     <Name>LatihasDupDll</Name>
-    <Description>游戏更新插件炸了？帮你排查哪个dll落后于版本</Description>
-    <Punchline>仅会检查在线安装的插件</Punchline>
+    <Description>仅会检查在线安装的插件</Description>
+    <Punchline>游戏更新插件炸了？帮你排查哪个dll落后于版本</Punchline>
   </PropertyGroup>
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == ''">
     <DalamudLibPath>$(appdata)\XIVLauncherCN\addon\Hooks\dev</DalamudLibPath>
